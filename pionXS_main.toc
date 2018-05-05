@@ -1,0 +1,6 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Uncertainty budget}{2}{section.1}
+\contentsline {section}{\numberline {2}Handling Beamline Contamination}{2}{section.2}
+\contentsline {section}{\numberline {3}Energy Studies}{2}{section.3}
+\contentsline {section}{\numberline {4}Tracking Studies}{2}{section.4}
+\contentsline {section}{\numberline {5}Efficiency Correction}{2}{section.5}
