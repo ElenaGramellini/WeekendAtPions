@@ -12,6 +12,43 @@ Measuring the pion cross section  in LArIAT translates into counting how many pi
 
 \section{Energy Studies}
 
+A study we did was to look at the difference between DATA/MC in the dE/dX and energy deposited. We basically found there is very little difference between the two and we try to quantify how much the difference is.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{dE/dX}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Figure \ref{fig:dEdXLinearScale} shows the output of the fit of the Pion MC and the 60 Amp data. The MC is normalized to the data and both are fit to a Landau function. \footnote{The entries at dE/dX = 0 come from an uninitialized variable and can/should be taken out of these plots}
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.48\textwidth]{Studies/Figures/dEdX_Fit_v1.png}
+\includegraphics[width=0.48\textwidth]{Studies/Figures/dEdX_Fit_v4.png}
+\caption[]{ dE/dX for 60Amp data and data driven pion MC, both fit with a Landau  } \label{fig:dEdXLinearScale}
+\end{figure}
+
+The difference between the two MPV's, is 2.4\% between the data and the MC.
+
+Figure \ref{fig:dEdXLinearStacked} shows the stacked version of the dE/dX with the backgrounds stacked. The backgrounds are given in the ratio of 68.8\% pion, 4.6\% muon, and 26.6\% electron. Once they are taken in these ratios, the sum of the MC is normalized to the sum of the data.
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.48\textwidth]{Studies/Figures/dEdX_stacked_v1.png}
+\includegraphics[width=0.48\textwidth]{Studies/Figures/dEdX_stacked_v4.png}
+\caption[]{ Stacked versions of the dE/dX with the data and electron/muon/pion MC.  } \label{fig:dEdXLinearStacked}
+\end{figure}
+
+For completeness, the log scale versions of are shown in Figure \ref{fig:dEdXLogScale}.
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.48\textwidth]{Studies/Figures/dEdX_Fit_v2.png}
+\includegraphics[width=0.48\textwidth]{Studies/Figures/dEdX_Fit_v3.png}
+\includegraphics[width=0.48\textwidth]{Studies/Figures/dEdX_stacked_v2.png}
+\includegraphics[width=0.48\textwidth]{Studies/Figures/dEdX_stacked_v3.png}
+\caption[]{ dE/dX for 60Amp data and MC shown in log scale  } \label{fig:dEdXLogScale}
+\end{figure}
+
+
 \section{Tracking Studies}
 
 \section{Efficiency Correction}
