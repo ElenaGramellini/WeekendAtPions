@@ -67,8 +67,13 @@ KE_{Initial} = \sqrt{P_{WCtrk}^2 + m_{\pi}^2} - m_{\pi}^2 - E_{Loss}
 
 and the uncertainty of the initial energy $\delta KE_{Initial}$ is given by
 \begin{equation}
-\frac{\delta KE_{Initial}}{KE_{Initial}} = \sqrt{\bigg( \frac{\delta P_{WCtrk}}{P_{WCtrk}} \bigg)^2 + \bigg(\frac{\delta E_{Loss}}{E_{Loss}} \bigg)^2}
+\delta KE_{Initial} = \sqrt{\delta P_{WCtrk}^2 + \delta E_{Loss}^2}
 \end{equation}
+
+If we assume the uncertainty is 2\% as the Minerva experiment had, and our uncertainty on the energy loss upstream is 7~MeV, then the total uncertainty on the initial kinetic energy for a typical 500~MeV pion is $\sim 12$~MeV.
+
+% 17/25 data 24/32 MeV for data with an uncertainty of 7 MeV
+
 
 Now the energy for $j^{th}$ slab of the incident histogram is given by
 \begin{equation}
@@ -91,10 +96,16 @@ The systematic uncertainty of $E_{j}^{slab}$ is given by the difference between 
 \caption[]{ Energy Deposited in Pion MC and 60A data.  } \label{fig:EnergyDeposited}
 \end{figure}
 
-The difference between the MPV of data and MC is 1.0\% and thus the systematic uncertainty on your $j^{th}$ slab is
+The difference between the MPV of data and MC is 1.0\% (0.0784 - 0.0776 / 0.0784) and thus the systematic uncertainty you would assign to the energy in the incident kinetic energy would be for all 240 slices (assuming you have 240 slices at 0.4 mm pitch) and thus is 
 
 \begin{equation}
-\delta E^{Slab}_{j} = 1.0\% E^{Slab}_j
+\delta E^{Slab}_{j} = (0.0784 - 0.0776) \times 240 = 0.008 MeV \times 240 = 1.92 MeV 
+\end{equation}
+
+So the uncertainty on the incident kinetic energy is given by
+
+\begin{equation}
+\delta KE^{Incident} = \sqrt{ (\delta KE_{Initial})^2 + (\delta E^{Slab}_{j})^2} = \sqrt{(12 MeV)^2 + (2 MeV)^2} = 12.1 MeV
 \end{equation}
 
 Figure \ref{fig:EnergyDepositedStacked} shows the stacked version of the Energy Deposited plots with the backgrounds stacked. The backgrounds are given in the ratio of 68.8\% pion, 4.6\% muon, and 26.6\% electron. Once they are taken in these ratios, the sum of the MC is normalized to the sum of the data.
@@ -106,9 +117,12 @@ Figure \ref{fig:EnergyDepositedStacked} shows the stacked version of the Energy 
 \caption[]{ Energy Deposited with all the MC and 60A data.  } \label{fig:EnergyDepositedStacked}
 \end{figure}
 
+The energy at the interacting point is given by
 \begin{equation}
 KE_{Interaction} = \sqrt{P_{WCtrk}^2 + m_{\pi}^2} - E_{Loss} - (\Sigma dE/dX_{i} \times Pitch)
 \end{equation}
+
+and has the exact same uncertainty as the incident kinetic energy plot. Thus these estimates can be applied to getting the uncertainty on the energy of the reconstructed cross-section.
 
 
 \section{Tracking Studies}
