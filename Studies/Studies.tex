@@ -59,7 +59,24 @@ Plotting scripts can be found here on lariatgpvm \begin{verbatim}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Energy Deposited}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The initial energy the particle has as it enters the TPC is given by
 
+\begin{equation}
+KE_{Initial} = \sqrt{P_{WCtrk}^2 + m_{\pi}^2} - m_{\pi}^2 - E_{Loss}
+\end{equation}
+
+and the uncertainty of the initial energy $\delta KE_{Initial}$ is given by
+\begin{equation}
+\frac{\delta KE_{Initial}}{KE_{Initial}} = \sqrt{\bigg( \frac{\delta P_{WCtrk}}{P_{WCtrk}} \bigg)^2 + \bigg(\frac{\delta E_{Loss}}{E_{Loss}} \bigg)^2}
+\end{equation}
+
+\begin{equation}
+KE_{Incident} = \sqrt{P_{WCtrk}^2 + m_{\pi}^2} - m_{\pi}^2 - E_{Loss} - (\Sigma dE/dX_{i} \times Pitch)
+\end{equation}
+
+\begin{equation}
+KE_{Interaction} = \sqrt{P_{WCtrk}^2 + m_{\pi}^2} - E_{Loss} - (\Sigma dE/dX_{i} \times Pitch)
+\end{equation}
 
 
 \section{Tracking Studies}
