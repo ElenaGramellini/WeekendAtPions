@@ -70,9 +70,41 @@ and the uncertainty of the initial energy $\delta KE_{Initial}$ is given by
 \frac{\delta KE_{Initial}}{KE_{Initial}} = \sqrt{\bigg( \frac{\delta P_{WCtrk}}{P_{WCtrk}} \bigg)^2 + \bigg(\frac{\delta E_{Loss}}{E_{Loss}} \bigg)^2}
 \end{equation}
 
+Now the energy for $j^{th}$ slab of the incident histogram is given by
 \begin{equation}
-KE_{Incident} = \sqrt{P_{WCtrk}^2 + m_{\pi}^2} - m_{\pi}^2 - E_{Loss} - (\Sigma dE/dX_{i} \times Pitch)
+KE^{Incident}_{j} = KE_{Inital} - (\sum_{i<j} dE/dX_{i} \times Pitch_i)
 \end{equation}
+where $i$ is given by the slab you are at, $dE/dX_{i}$ is the energy deposited at that slab, and $Pitch_i$ is the pitch for that point. 
+
+Thus we can talk about the energy at the $j^{th}$ slab as 
+
+\begin{equation}
+E_{j}^{slab} = (\sum_{i<j} dE/dX_{i} \times Pitch_i)
+\end{equation}
+
+The systematic uncertainty of $E_{j}^{slab}$ is given by the difference between this quantity in data and MC, and the uncertainty on $E_{j}^{slab}$ is given by the width of the Landau fit to the data. These are shown in Figure \ref{fig:EnergyDeposited}
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.48\textwidth]{Studies/Figures/DepEnergy_Fit_v1.png}
+\includegraphics[width=0.48\textwidth]{Studies/Figures/DepEnergy_Fit_v4.png}
+\caption[]{ Energy Deposited in Pion MC and 60A data.  } \label{fig:EnergyDeposited}
+\end{figure}
+
+The difference between the MPV of data and MC is 1.0\% and thus the systematic uncertainty on your $j^{th}$ slab is
+
+\begin{equation}
+\delta E^{Slab}_{j} = 1.0\% E^{Slab}_j
+\end{equation}
+
+Figure \ref{fig:EnergyDepositedStacked} shows the stacked version of the Energy Deposited plots with the backgrounds stacked. The backgrounds are given in the ratio of 68.8\% pion, 4.6\% muon, and 26.6\% electron. Once they are taken in these ratios, the sum of the MC is normalized to the sum of the data.
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.48\textwidth]{Studies/Figures/DepEnergy_Stacked_v1.png}
+\includegraphics[width=0.48\textwidth]{Studies/Figures/DepEnergy_Stacked_v3.png}
+\caption[]{ Energy Deposited with all the MC and 60A data.  } \label{fig:EnergyDepositedStacked}
+\end{figure}
 
 \begin{equation}
 KE_{Interaction} = \sqrt{P_{WCtrk}^2 + m_{\pi}^2} - E_{Loss} - (\Sigma dE/dX_{i} \times Pitch)
