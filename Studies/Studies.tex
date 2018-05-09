@@ -1,7 +1,7 @@
 
 
 \section{Tracking Studies}
-\subsection{Angular Resolution}
+\subsection{Angular Resolution}\label{sec:angleRes}
 Scope of this study is to understand and compare the tracking performances and angular resolution of the TPC tracking on data and MC. 
 We use the angular resolution of the tracking to determine  the value of smallest angle that we can reconstruct with a non-zero efficiency, effectively determining a selection on the angular distribution of the cross section measurement due to the tracking performances.
 
@@ -295,10 +295,10 @@ C^{\pi MC}_{Interacting} (E_{i}) =  \frac{N^{\pi MC}_{Interacting}}{ N^{TOT MC}_
 
 In order to evaluate the pion content of each bin in data, we scale the measured bin content by the corresponding  pion contribution found in MC, as follows
 \begin{equation}
-N^{\pi Data}_{Interacting} = N^{TOT Data}_{Interacting} (E_{i}) - B^{Data}_{Interacting} (E_i)  =  C^{\pi MC}_{Interacting} (E_{i}) N^{TOT Data}_{Interacting} (E_{i}).
+N^{\pi Reco Data}_{Interacting} = N^{TOT Data}_{Interacting} (E_{i}) - B^{Data}_{Interacting} (E_i)  =  C^{\pi MC}_{Interacting} (E_{i}) N^{TOT Data}_{Interacting} (E_{i}).
 \end{equation}
 
-Figures \ref{fig:Corrections} show $C^{\pi MC}_{Interacting} (E_{i})$ and $C^{\pi MC}_{Incident} (E_{i})$ as a function of momentum for the 60A runs and their systematic uncertainty. 
+Figures \ref{fig:CorrectionsBeam} show $C^{\pi MC}_{Interacting} (E_{i})$ and $C^{\pi MC}_{Incident} (E_{i})$ as a function of momentum for the 60A runs and their systematic uncertainty. 
 We take a 100\% systematic uncertainty on the muon and electron content: we calculate the extreme values of  $C^{\pi MC}_{Interacting} (E_{i})$ and $C^{\pi MC}_{Incident} (E_{i})$ in each bin changing the beam composition for the configurations listed in Table \ref{tab:beamlineSys}.
 
 
@@ -321,18 +321,63 @@ Composition 0.5x Electrons   &82.1	\%&4.6 \%&	13.3 \%&	91.9 \%&	3.7	\%&4.4 \% \\
 \label{tab:beamlineSys}
 \end{table}
 
+\begin{figure}[p]
+\centering
+\includegraphics[width=\textwidth]{Studies/Figures/c60A_Multiple.png}
+\caption{Left: relative pion content for interacting histogram a function of kinetic energy for the 60A runs, statistics uncertainty in azure and systematic uncertainty in blue. Right: relative pion content  for incident histogram a function of kinetic energy for the 60A runs, statistics uncertainty in azure and systematic uncertainty in blue.}
+\label{fig:CorrectionsBeam}
+\end{figure}
 
 
 
-
-\subsection{Systematics on Background Subtraction}\label{sec:beamSys}
-
-
+\clearpage
 
 \section{Efficiency Correction}\label{sec:EffCorrection}
+The interaction point for a track used in the total hadronic cross section analysis is defined to be the last point of the WC2TPC matched track which lies inside the fiducial volume. This definition is independent from the topology of the interaction. If the TPC track stops within the fiducial volume, its last point will be the interaction point, no matter what the products of the interaction look like; if the track crosses the boundaries of the fiducial volume, the track will be considered ``through going" and no interaction point will be found.  Given this definition, it is evident that we rely on the tracking algorithm to discern where the interaction occurred in the TPC  and correctly stop the tracking. The tracking algorithm has an intrinsic angle resolution as shown in section \ref{sec:angleRes}, which limits its efficiency, especially in the case of elastic scattering occurring a low angles. 
+Thus, we need to apply an efficiency correction to data in order to retrieve the true cross section.  The efficiency correction is evaluated separately for the interacting and incident histograms, namely $\epsilon^{int}_i$ and  $\epsilon^{inc}_i$, and propagated to the cross section as shown in  equation \ref{eq:True}. 
+
+\subsection{Efficiency Correction: Procedure}\label{sec:EffCorrection}
+We describe here the procedure to calculate the efficiency correction taking the interacting histogram as example and noting that the procedure is identical for the  incident histogram. 
+
+We derive the correction on a set of pure pion MC, calculating its value bin by bin as the ratio between the true bin content and the correspondent reconstructed bin content. The correction is then applied to the relevant bin in data. In formulae, the efficiency correction is calculated to be
+
+\begin{equation}
+\epsilon^{\text{int}}_i  =  \frac{N^{\text{ $\pi$ Reco MC}}_{\text{Interacting}} (E_{i})}{ N^{\text{ $\pi$ True MC}}_{\text{Interacting}} (E_{i})  },
+\end{equation}
+ 
+where $N^{\text{ $\pi$ True MC}}_{\text{Interacting}} (E_{i}) $ is the content of the $i$-th bin in for the true interacting histogram, and $N^{\text{ $\pi$ Reco MC}}_{\text{Interacting}} (E_{i}) $ is the content of the $i$-th bin in for the reconstructed interacting histogram. The correction is applied to data as follows
+
+\begin{equation}
+N^{\text{ $\pi$ True Data}}_{\text{Interacting}} (E_{i})  =  \frac{N^{\text{$\pi$ Reco Data}}_{\text{Interacting}} (E_{i})}{\epsilon^{\text{int}}_i} = N^{\text{$\pi$ Reco Data}}_{\text{Interacting}} (E_{i}) \frac{N^{\text{ $\pi$ True MC}}_{\text{Interacting}} (E_{i})}{ N^{\text{ $\pi$ Reco MC}}_{\text{Interacting}} (E_{i})}.
+\end{equation}
+
+where $N^{\text{$\pi$ Reco Data}}_{\text{Interacting}} (E_{i})$ is the background subtracted bin content of the $i$-th bin in for the reconstructed interacting histogram for data, i.e. 
+\begin{equation}
+N^{\text{$\pi$ Reco Data}}_{\text{Interacting}} (E_{i}) =  N^{TOT Data}_{Interacting} (E_{i}) - B^{Data}_{Interacting} (E_i)  =  C^{\pi MC}_{Interacting} (E_{i}) N^{TOT Data}_{Interacting} (E_{i}).
+\end{equation}
+
+
+
+
+%Figure \ref{fig:trueScatteringAngle} shows the distribution of the simulated scattering angles for elastic scattering as predicted by Geant4. 
+%In  \ref{sec:angleRes}) Since the angle resolution in data is estimated to be $\bar\alpha_{Data} = (5.0 \pm 4.5) \text{ deg}$  
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=0.48\textwidth]{Studies/Figures/cAngleTrue.png}
+\caption{Distribution of the true scattering angle for a pion elastic scattering off the argon nucleus as simulated by Geant4.}
+\label{fig:trueScatteringAngle}
+\end{figure}
+
+
+
 \subsection{Systematics on Efficiency Correction}\label{sec:angSys}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{comment}
 Assuming a beam of pure pions gets to the TPC, let us explicit some of the variables in the kinetic energy equation \ref{eq:KEj}  to point out the important quantities in the uncertainty budget,
@@ -357,6 +402,11 @@ Uncertainty on a 4-point track:
 }
 
 \subsection{Systematics on $E_{loss}$}
+
+
+
+
+
 
 
 
