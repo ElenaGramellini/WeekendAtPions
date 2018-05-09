@@ -18,14 +18,14 @@ A visual representation of the procedure used to evaluate the angular resolution
 For each track, we order the space points according to their Z position (along the positive beam direction) and we split them in two sets: the first set contains all the points belonging to the first half of the track and the second set counts all the points contains to the second half of the track. We remove the last four points in the first set and the first four points in the second set, so to have a gap in the middle of the original track. We fit the first and the second set of points with a line separately. We then calculate the angle between the fit of the first and second half $\alpha$. The angle $\alpha$ determines the spatial resolution of the tracking. The distributions for data and MC for $\alpha$ are given in \ref{fig:trackingResolution}. The mean of the data and MC angular resolution are respectively 
 
 \begin{equation}
-\bar\alpha_{Data} = (4.7 \pm 3.3) \text{ deg} 
+\bar\alpha_{Data} = (5.0 \pm 4.5) \text{ deg} 
 \end{equation}
 
 \begin{equation}
-\bar\alpha_{MC} = (4.5 \pm 3.2) \text{ deg}. 
+\bar\alpha_{MC} = (4.5 \pm 3.9) \text{ deg}. 
 \end{equation}
 
-A small, $0.2 \text{ deg}$ systematic shift between the mean of the data and MC angular resolution is present, which we account for in the context of the MC efficiency correction to the cross section, as presented in \ref{sec:angSys}.
+A small, $0.5 \text{ deg}$ systematic shift between the mean of the data and MC angular resolution is present, which we account for in the context of the MC efficiency correction to the cross section, as presented in \ref{sec:angSys}.
 
 
 \begin{figure}[htb]
@@ -37,9 +37,18 @@ A small, $0.2 \text{ deg}$ systematic shift between the mean of the data and MC 
 
 \begin{figure}[htb]
 \centering
+\includegraphics[width=0.48\textwidth]{Studies/Figures/cDAvg.png}
+\caption[]{Distributions of the average distance between each 3D point in space and the fit line,  $\bar d$ for the data used in the pion cross section analysis and the pion only DDMC. The distributions are area normalized. } \label{fig:Chi2AllPts}
+\end{figure}
+
+\begin{figure}[htb]
+\centering
 \includegraphics[width=0.48\textwidth]{Studies/Figures/cTrackingDeg.png}
 \caption[]{Distributions of angular resolution $\alpha$ for data used in the pion cross section analysis and pion only DDMC. The distributions are area normalized. } \label{fig:trackingResolution}
 \end{figure}
+
+
+
 
 \section{Energy Studies}
 
@@ -290,13 +299,36 @@ C^{\pi MC}_{Interacting} (E_{i}) =  \frac{N^{\pi MC}_{Interacting}}{ N^{TOT MC}_
 \end{equation}
 
 
-In order to evaluate the pion content of each bean in data, we multiply the measured content of each bin by the corresponding relative pion contribution found in MC, as follows
+In order to evaluate the pion content of each bin in data, we scale the measured bin content by the corresponding  pion contribution found in MC, as follows
 \begin{equation}
 N^{\pi Data}_{Interacting} = N^{TOT Data}_{Interacting} (E_{i}) - B^{Data}_{Interacting} (E_i)  =  C^{\pi MC}_{Interacting} (E_{i}) N^{TOT Data}_{Interacting} (E_{i}).
 \end{equation}
 
+Figures \ref{fig:Corrections} show $C^{\pi MC}_{Interacting} (E_{i})$ and $C^{\pi MC}_{Incident} (E_{i})$ as a function of momentum for the 60A runs and their systematic uncertainty. 
+We take a 100\% systematic uncertainty on the muon and electron content: we calculate the extreme values of  $C^{\pi MC}_{Interacting} (E_{i})$ and $C^{\pi MC}_{Incident} (E_{i})$ in each bin changing the beam composition for the configurations listed in Table \ref{tab:beamlineSys}.
 
-We estimate the systematic uncertainty on the cross section from this subtraction procedure by varying the electron to pion and muon to pion ratio in a suitable range of values. Figure  
+
+
+\begin{table}[p]
+\centering
+\begin{tabular}{| l | l | l | l | l | l | l | l | }
+\hline
+ &  \multicolumn{3}{|c|}{Magnet Current -60A} & \multicolumn{3}{|c|}{Magnet Current -100 A}\\
+
+                                                  & MC $\pi^-$   & MC  $ \mu^-$ & MC  $e^-$ & MC  $\pi^-$ & MC  $\mu^-$ & MC  $e^-$  \\
+\hline
+Composition 2x muons          & 64.2	\%&9.2 \%&	26.6 \%&	83.7 \%&	7.4	\%&8.9 \% \\
+Composition 0.5x muons       &71.1	\%&2.3 \%&	26.6 \%&	89.2 \%&	1.9	\%&8.9 \% \\
+Composition 2x Electrons      &42.2	\%&4.6 \%&	53.2 \%&	78.5	\%&  3.7	\%&17.8 \%\\
+Composition 0.5x Electrons   &82.1	\%&4.6 \%&	13.3 \%&	91.9 \%&	3.7	\%&4.4 \% \\
+\hline
+\end{tabular}
+\caption{Beam composition variation for the study of systematics due to beam contamination.}
+\label{tab:beamlineSys}
+\end{table}
+
+
+
 
 
 \subsection{Systematics on Background Subtraction}\label{sec:beamSys}
