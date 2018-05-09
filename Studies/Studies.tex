@@ -165,7 +165,7 @@ If LArIAT had a beam of pure pions and were 100\% efficient in determining the i
 \label{eq:thinTargetXSSolved}
 \end{equation}
 
-Unfortunately, this is not the case. The selection used to isolate pions in the LArIAT beam allows for the presence of some muons and electrons as contaminants. Also, the LArIAT TPC is not 100\% efficient in determining the interaction point. Therefore we need to apply two corrections in order to extract the true pion cross section from LArIAT data: the background subtraction and the efficiency correction. 
+Unfortunately, this is not the case. The selection used to isolate pions in the LArIAT beam allows for the presence of some muons and electrons as background. Also, the LArIAT TPC is not 100\% efficient in determining the interaction point. Therefore we need to apply two corrections in order to extract the true pion cross section from LArIAT data: the background subtraction and the efficiency correction. 
 We estimate the true pion cross section in each energy bin changing  the equation \ref{eq:thinTargetXSSolved} into
 \begin{equation}
  \sigma^{\pi^-}(E_{i})  =\frac{1}{n \delta X}\frac{N^{\pi^-}_{Interacting} (E_{i})}{N^{\pi^-}_{Incident}(E_{i})} = \frac{1}{n \delta X}\frac{ \epsilon^{inc}_i [ N^{TOT}_{Interacting} (E_{i}) - B_{interacting} (E_i)] }{   \epsilon^{int}_i [N^{TOT}_{Incident}(E_{i}) - B_{incident} (E_i)]},
@@ -175,7 +175,7 @@ We estimate the true pion cross section in each energy bin changing  the equatio
 
 
  
-where  $N^{TOT}_{Interacting} (E_{i})$ and $N^{TOT}_{Incident}(E_{i})$ is the measured content of the data interacting and incident histograms respectively, $B_{interacting} (E_i)$ and $B_{incident} (E_i)$ represent the contributions from beamline contaminants, and  $\epsilon^{int}_i$ and  $\epsilon^{inc}_i$ are the efficiency corrections for said histograms. 
+where  $N^{TOT}_{Interacting} (E_{i})$ and $N^{TOT}_{Incident}(E_{i})$ is the measured content of the data interacting and incident histograms respectively, $B_{interacting} (E_i)$ and $B_{incident} (E_i)$ represent the contributions from beamline background, and  $\epsilon^{int}_i$ and  $\epsilon^{inc}_i$ are the efficiency corrections for said histograms. 
 
 As we will show in section \ref{sec:Correction}, the background subtraction for the interacting and incident histograms can be translated into a corresponding corrections $C^{\pi MC}_{Interacting} (E_{i})$ and $C^{\pi MC}_{Incident} (E_{i})$ and the cross section re-written as follows
 
@@ -188,15 +188,15 @@ As we will show in section \ref{sec:Correction}, the background subtraction for 
 
 
 The following sections describe the procedures used to evaluate  the background subtraction (section \ref{sec:beamCont}) and the efficiency correction (section \ref{sec:EffCorrection}), as well as  their uncertainties. 
-The reader might be concerned about bin-by-bin migration of events in the interacting and incident plots due to the finite resolution of the energy reconstruction. In section \ref{sec:Energy}, we make an argument to why we expect the smearing matrix to be extremely close to diagonal and such that its calculation is left for an improvement of the analysis.
+The reader might be concerned about bin-by-bin migration of events in the interacting and incident plots due to the finite resolution of the energy reconstruction. In section \ref{sec:Energy}, we make an argument to why we expect the smearing matrix to be extremely close to diagonal, such that its calculation and relative corrections are left for an improvement of the analysis.
 
 
 
 \section{Background Subtraction }\label{sec:beamCont}
-Even if pions are by far the biggest component of the beam in negative polarity runs, the LArIAT beam is not a pure pion beam. While useful to discriminate  pions/muons/electrons from kaons, and protons, the beamline detectors are not sensitive enough to  discriminate among the lighter particles in the beam: electrons, muons and pions fall under the same mass hypothesis. Thus, we need to assess the contamination from beamline particles other than pions in the event selections used for the pion cross section analysis and correct for its effects.
+Even if pions are by far the biggest component of the beam in negative polarity runs, the LArIAT beam is not a pure pion beam. While useful to discriminate  pions/muons/electrons from kaons, and protons, the beamline detectors are not sensitive enough to  discriminate among the lighter particles in the beam: electrons, muons and pions fall under the same mass hypothesis. Thus, we need to assess the background from beamline particles other than pions in the event selections used for the pion cross section analysis and correct for its effects.
 
 \subsection{Beam Composition}\label{sec:BeamAtWC4}
-We define beamline contamination every TPC track matched to the WC track which is not a primary pion. Potentially, there are 4 different types of beamline contaminations:
+We define beamline background every TPC track matched to the WC track which is not a primary pion. Potentially, there are 4 different types of beamline background:
 \begin{itemize}
 \item[]1) electrons,
 \item[]2) muons,
@@ -205,10 +205,10 @@ We define beamline contamination every TPC track matched to the WC track which i
 \end{itemize}
 
 The first step is to estimate what percentage of events used in the cross section calculation is not a primary pion.  The next two sections will illustrate this estimate for the electrons, muons and secondaries from pion event.
-We estimate the last type of contamination, the ``matched pile up" events, to be a negligible fraction, because of the definition of the WC2TPC match: we deem the probability of a single match with a halo particle in the absence of a beamline particle\footnote{ Events with multiple WC2TPC matches are always rejected.} negligibly small. \textcolor{red}{SHOW VTX distribution in WC2TPC match}
+We estimate the last type of background, the ``matched pile up" events, to be a negligible fraction, because of the definition of the WC2TPC match: we deem the probability of a single match with a halo particle in the absence of a beamline particle\footnote{ Events with multiple WC2TPC matches are always rejected.} negligibly small. \textcolor{red}{SHOW VTX distribution in WC2TPC match}
 
 
-\subsubsection{Contamination from Beamline Electrons and Muons}\label{stionEMu}
+\subsubsection{Background from Beamline Electrons and Muons}\label{stionEMu}
 \begin{figure}[b]
 \includegraphics[width=0.5\textwidth,height=\textheight,keepaspectratio]{Studies/Figures//Beam60A.png}
 \includegraphics[width=0.5\textwidth,height=\textheight,keepaspectratio]{Studies/Figures//Beam100A.png}
@@ -235,34 +235,35 @@ G4Electrons &   26.6 \%           &        8.9 \%        \\ \hline
 
 Figure \ref{fig:BeamComposition} shows the momentum predictions from G4Beamline overlaid with data for the 60A runs (left) and for the 100A runs (right). The predictions for electrons, muons and pions have been staggered and their sum is area normalized to data, which is shown in red. Albeit not perfect, these plots show a reasonable agreement between the momentum shapes in data and MC. We attribute  the difference in shape to the lack of simulation of the WC efficiency in the MC which is momentum dependent and leads to enhance the number events in the center of the momentum distribution.
 
-Once the beam composition at WC4 is know,  we simulate the electrons, muons and pions with the DDMC and we subject the three samples to the same selection chain (WC2TPC match, shower filter, pile up filter). The percentage of electrons and muons surviving the selection chain weighted by the beam composition is the  electron and muon contamination in the pion cross section sample, as shown in Table \ref{tab:MCafterCutContaminants}.
+Once the beam composition at WC4 is know,  we simulate the electrons, muons and pions with the DDMC and we subject the three samples to the same selection chain (WC2TPC match, shower filter, pile up filter). The percentage of electrons and muons surviving the selection chain weighted by the beam composition is the  electron and muon background in the pion cross section sample, as shown in Table \ref{tab:MCafterCutContaminants}.
 
-\subsubsection{Contamination from secondaries at TPC Front Face}
+\subsubsection{Background from secondaries at TPC Front Face}
 Pions can travel the length of the LArIAT beamline and interact hadronically in the steel or in the non-instrumented argon upstream to the TPC front face. Or, they could decay in flight between WC4 and the TPC. One of the interaction products can leak into the TPC and be matched with the WC track, contributing to the pool of events used for the cross section calculation. We call this type of particles ``secondaries" from pion events, with a terminology inspired by Geant4. 
 We estimate the number of secondaries using the DDMC pion sample.  The percentage of secondaries is given by the number of matched WC2TPC tracks whose corresponding particle is not flagged as primary by Geant4.  The secondary to pion ratio is $X$\% in the 60A sample and $Y$\% in the 100A sample.
 
-\subsection{Propagation and Filter}\label{sec:PropagationAndFilter}
-Once we have estimated the beam composition at WC4, the next step is propagating pions, muons and electrons into the TPC and evaluate their collective contribution to the cross section. To do so, we simulate the same number of electrons, muons and pions with the DDMC and we apply the same selection filters on the three samples. The number of events per particle species surviving this selection is shown on table \ref{tab:MCafterCutContaminants}.
+\subsection{Background Contribution to the Cross Section}\label{sec:Correction}
+Once we have estimated the beam composition, the next step is propagating pions, muons and electrons to the TPC and evaluate their collective contribution to the cross section. To do so, we simulate the same number of electrons, muons and pions with the DDMC and we apply the same selection filters on the three samples. The number of events per particle species surviving this selection is shown on table \ref{tab:MCafterCutContaminants}.
 
 \begin{table}[p]
 \centering
 \begin{tabular}{| l | l | l | l | l | l | l | l | }
 \hline
-                                                  &                      &                       &                   &                       &                        &\\  
-                                                  & $\pi^-$  60A  & $ \mu^-$ 60A & $e^-$  60A & $\pi^-$ 100A  & $\mu^-$ 100A & $e^-$  100A  \\
+ &  \multicolumn{3}{|c|}{Magnet Current -60A} & \multicolumn{3}{|c|}{Magnet Current -100 A}\\
+
+                                                  & MC $\pi^-$   & MC  $ \mu^-$ & MC  $e^-$ & MC  $\pi^-$ & MC  $\mu^-$ & MC  $e^-$  \\
 \hline
 &  &  &  & & &\\  
-Total Initial events                     & 334500  & 334500  & 334500 & & & \\
-After Multiplicity Rejection        & 331313   & 322436  &  186261& & &\\
-After WC2TPC: Selection         & 201458  & 285686 & 79109 & & &\\
-Evts After Shower Rejection     & 191655  &  277914 &   17477 & & &\\
+Total Initial events                     & 334500  & 334500 & 334500 & & & \\
+After Multiplicity Rejection        & 330668  & 333420  & 198065& & &\\
+After WC2TPC Selection          & 218239  & 296333 & 91139 & & &\\
+Evts After Shower Rejection     & 208063  & 288914 &  20293 & & &\\
 &  &  &  & & &\\  
   \hline
 &  &  &  & & &\\  
-Selection Survival Rate           &57\% & 83\% & 5\% & & &\\
+Selection Survival Rate           &62.3\% & 86.6\% & 6.1\% & & &\\
 Beam Composition  @WC4      &  68.8\%   &  4.6 \%  & 26.6 \%    & 87.4 \% & 3.7 \%  & 8.9 \% \\ %
-Beam Composition   @TPC FF &     &   &     & & &\\
-         &                               &             &                      &  \\ 
+Beam Composition  @TPC FF &  88.5\%   & 8.2\%   & 3.3 \%   & & &\\
+                                                  &                      &                       &                   &                       &                        &\\  
 \hline
 \end{tabular}
 \caption{MC selection flow per particle species.}
@@ -277,8 +278,8 @@ Beam Composition   @TPC FF &     &   &     & & &\\
 \label{fig:stag60A}
 \end{figure}
 
-\subsection{Background Contribution to the Cross Section}\label{sec:Correction}
-We then produce the interacting and incident histograms for the events surviving the selection for both the pions and the contaminants, weighted by the estimated beam composition. From the histograms in Figure \ref{fig:stag60A}, we are able to evaluate the relative contribution of the contaminants to each bin of the interacting and incident histograms separately and obtain the respective corrections for data. We take here the interacting histogram as example, noting that the derivation is identical for the incident histogram. The number of entries in each bin of the interacting plot (Figure \ref{fig:stag60A} left) is  $N^{TOT}_{Interacting} (E_{i})$, equal to the sum of the pions and contaminants in that bin, namely
+In order to reproduce the closest make up of the beam to data, we weight each event of a given particle species according to the estimated beam composition. In case of 60A runs, for example, the weights are 0.688 for pions,  0.046 for muons  and 0.266 for electrons.
+We produce accordingly the interacting and incident histograms for the events surviving the selection, staggering the contributions for each particle species, as shown in Figure  \ref{fig:stag60A}. From those histograms, we are able to evaluate the relative contribution of  pions and  background to each bin of the interacting and incident histograms separately and obtain the respective corrections for data. We take here the interacting histogram as example, noting that the derivation of the correction for the incident histogram is identical. The number of entries in each bin of the interacting plot (Figure \ref{fig:stag60A} left) is  $N^{TOT}_{Interacting} (E_{i})$, equal to the sum of the pions and background in that bin, namely
 
 \begin{equation}
 N^{TOT}_{Interacting} (E_{i}) =  N^\pi_{Interacting} (E_{i}) + \underbrace{ N^\mu_{Interacting} (E_{i}) + N^e_{Interacting} (E_{i}) + N^{Secondary}_{Interacting} (E_{i}) }_{B_{Interacting} (E_i)}.

@@ -6,10 +6,9 @@
 \BOOKMARK [1][-]{section.3}{Outline Of the Measurement}{}% 6
 \BOOKMARK [1][-]{section.4}{Background Subtraction }{}% 7
 \BOOKMARK [2][-]{subsection.4.1}{Beam Composition}{section.4}% 8
-\BOOKMARK [3][-]{subsubsection.4.1.1}{Contamination from Beamline Electrons and Muons}{subsection.4.1}% 9
-\BOOKMARK [3][-]{subsubsection.4.1.2}{Contamination from secondaries at TPC Front Face}{subsection.4.1}% 10
-\BOOKMARK [2][-]{subsection.4.2}{Propagation and Filter}{section.4}% 11
-\BOOKMARK [2][-]{subsection.4.3}{Background Contribution to the Cross Section}{section.4}% 12
-\BOOKMARK [2][-]{subsection.4.4}{Systematics on Background Subtraction}{section.4}% 13
-\BOOKMARK [1][-]{section.5}{Efficiency Correction}{}% 14
-\BOOKMARK [2][-]{subsection.5.1}{Systematics on Efficiency Correction}{section.5}% 15
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Background from Beamline Electrons and Muons}{subsection.4.1}% 9
+\BOOKMARK [3][-]{subsubsection.4.1.2}{Background from secondaries at TPC Front Face}{subsection.4.1}% 10
+\BOOKMARK [2][-]{subsection.4.2}{Background Contribution to the Cross Section}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.3}{Systematics on Background Subtraction}{section.4}% 12
+\BOOKMARK [1][-]{section.5}{Efficiency Correction}{}% 13
+\BOOKMARK [2][-]{subsection.5.1}{Systematics on Efficiency Correction}{section.5}% 14
