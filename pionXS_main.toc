@@ -1,9 +1,9 @@
 \select@language {english}
 \contentsline {section}{\numberline {1}Tracking Studies}{2}{section.1}
 \contentsline {subsection}{\numberline {1.1}Angular Resolution}{2}{subsection.1.1}
-\contentsline {section}{\numberline {2}Energy Studies}{3}{section.2}
-\contentsline {subsection}{\numberline {2.1}dE/dX}{3}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Energy Deposited}{4}{subsection.2.2}
+\contentsline {section}{\numberline {2}Energy Studies}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}dE/dX}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Energy Deposited}{3}{subsection.2.2}
 \contentsline {section}{\numberline {3}Outline Of the Measurement}{6}{section.3}
 \contentsline {section}{\numberline {4}Background Subtraction }{6}{section.4}
 \contentsline {subsection}{\numberline {4.1}Beam Composition}{6}{subsection.4.1}

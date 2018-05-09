@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.11.15)  9 MAY 2018 12:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.11.15)  9 MAY 2018 14:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1109,8 +1109,8 @@ File: Studies/Figures/cTrackingDeg.png Graphic file (type png)
 Package pdftex.def Info: Studies/Figures/cTrackingDeg.png used on input line 41
 .
 (pdftex.def)             Requested size: 211.26028pt x 207.19324pt.
- [2 <./Studies/Figures/cDAvg.png> <./Studies/Figures/cTrackingDeg.png>]
-<Studies/Figures/dEdX_Fit_v1.png, id=111, 700.6175pt x 475.7775pt>
+
+<Studies/Figures/dEdX_Fit_v1.png, id=99, 700.6175pt x 475.7775pt>
 File: Studies/Figures/dEdX_Fit_v1.png Graphic file (type png)
 
 <use Studies/Figures/dEdX_Fit_v1.png>
@@ -1118,7 +1118,7 @@ Package pdftex.def Info: Studies/Figures/dEdX_Fit_v1.png used on input line 58.
 
 (pdftex.def)             Requested size: 225.34383pt x 153.02144pt.
 
-<Studies/Figures/dEdX_Fit_v4.png, id=112, 700.6175pt x 475.7775pt>
+<Studies/Figures/dEdX_Fit_v4.png, id=100, 700.6175pt x 475.7775pt>
 File: Studies/Figures/dEdX_Fit_v4.png Graphic file (type png)
 
 <use Studies/Figures/dEdX_Fit_v4.png>
@@ -1126,7 +1126,7 @@ Package pdftex.def Info: Studies/Figures/dEdX_Fit_v4.png used on input line 59.
 
 (pdftex.def)             Requested size: 225.34383pt x 153.02144pt.
 
-<Studies/Figures/dEdX_stacked_v1.png, id=114, 700.6175pt x 475.7775pt>
+<Studies/Figures/dEdX_stacked_v1.png, id=102, 700.6175pt x 475.7775pt>
 File: Studies/Figures/dEdX_stacked_v1.png Graphic file (type png)
 
 <use Studies/Figures/dEdX_stacked_v1.png>
@@ -1134,7 +1134,7 @@ Package pdftex.def Info: Studies/Figures/dEdX_stacked_v1.png used on input line
  69.
 (pdftex.def)             Requested size: 225.34383pt x 153.02144pt.
 
-<Studies/Figures/dEdX_stacked_v4.png, id=115, 700.6175pt x 475.7775pt>
+<Studies/Figures/dEdX_stacked_v4.png, id=103, 700.6175pt x 475.7775pt>
 File: Studies/Figures/dEdX_stacked_v4.png Graphic file (type png)
 
 <use Studies/Figures/dEdX_stacked_v4.png>
@@ -1142,7 +1142,7 @@ Package pdftex.def Info: Studies/Figures/dEdX_stacked_v4.png used on input line
  70.
 (pdftex.def)             Requested size: 225.34383pt x 153.02144pt.
 
-<Studies/Figures/dEdX_Fit_v2.png, id=117, 700.6175pt x 475.7775pt>
+<Studies/Figures/dEdX_Fit_v2.png, id=105, 700.6175pt x 475.7775pt>
 File: Studies/Figures/dEdX_Fit_v2.png Graphic file (type png)
 
 <use Studies/Figures/dEdX_Fit_v2.png>
@@ -1150,7 +1150,7 @@ Package pdftex.def Info: Studies/Figures/dEdX_Fit_v2.png used on input line 78.
 
 (pdftex.def)             Requested size: 225.34383pt x 153.02144pt.
 
-<Studies/Figures/dEdX_Fit_v3.png, id=118, 700.6175pt x 475.7775pt>
+<Studies/Figures/dEdX_Fit_v3.png, id=106, 700.6175pt x 475.7775pt>
 File: Studies/Figures/dEdX_Fit_v3.png Graphic file (type png)
 
 <use Studies/Figures/dEdX_Fit_v3.png>
@@ -1158,7 +1158,7 @@ Package pdftex.def Info: Studies/Figures/dEdX_Fit_v3.png used on input line 79.
 
 (pdftex.def)             Requested size: 225.34383pt x 153.02144pt.
 
-<Studies/Figures/dEdX_stacked_v2.png, id=119, 700.6175pt x 475.7775pt>
+<Studies/Figures/dEdX_stacked_v2.png, id=107, 700.6175pt x 475.7775pt>
 File: Studies/Figures/dEdX_stacked_v2.png Graphic file (type png)
 
 <use Studies/Figures/dEdX_stacked_v2.png>
@@ -1166,16 +1166,16 @@ Package pdftex.def Info: Studies/Figures/dEdX_stacked_v2.png used on input line
  80.
 (pdftex.def)             Requested size: 225.34383pt x 153.02144pt.
 
-<Studies/Figures/dEdX_stacked_v3.png, id=120, 700.6175pt x 475.7775pt>
+<Studies/Figures/dEdX_stacked_v3.png, id=108, 700.6175pt x 475.7775pt>
 File: Studies/Figures/dEdX_stacked_v3.png Graphic file (type png)
 
 <use Studies/Figures/dEdX_stacked_v3.png>
 Package pdftex.def Info: Studies/Figures/dEdX_stacked_v3.png used on input line
  81.
 (pdftex.def)             Requested size: 225.34383pt x 153.02144pt.
- [3 <./Studies/Figures/dEdX_Fit_v1.png> <./Studies/Figures/dEdX_Fit_v4.png> <./
-Studies/Figures/dEdX_stacked_v1.png> <./Studies/Figures/dEdX_stacked_v4.png>]
-<Studies/Figures/DepEnergy_Fit_v1.png, id=133, 700.6175pt x 475.7775pt>
+ [2] [3 <./Studies/Figures/cDAvg.png> <./Studies/Figures/cTrackingDeg.png> <./S
+tudies/Figures/dEdX_Fit_v1.png> <./Studies/Figures/dEdX_Fit_v4.png>]
+<Studies/Figures/DepEnergy_Fit_v1.png, id=135, 700.6175pt x 475.7775pt>
 File: Studies/Figures/DepEnergy_Fit_v1.png Graphic file (type png)
 
 <use Studies/Figures/DepEnergy_Fit_v1.png>
@@ -1183,16 +1183,17 @@ Package pdftex.def Info: Studies/Figures/DepEnergy_Fit_v1.png used on input lin
 e 128.
 (pdftex.def)             Requested size: 225.34383pt x 153.02144pt.
 
-<Studies/Figures/DepEnergy_Fit_v4.png, id=134, 700.6175pt x 475.7775pt>
+<Studies/Figures/DepEnergy_Fit_v4.png, id=136, 700.6175pt x 475.7775pt>
 File: Studies/Figures/DepEnergy_Fit_v4.png Graphic file (type png)
 
 <use Studies/Figures/DepEnergy_Fit_v4.png>
 Package pdftex.def Info: Studies/Figures/DepEnergy_Fit_v4.png used on input lin
 e 129.
 (pdftex.def)             Requested size: 225.34383pt x 153.02144pt.
- [4 <./Studies/Figures/dEdX_Fit_v2.png> <./Studies/Figures/dEdX_Fit_v3.png> <./
-Studies/Figures/dEdX_stacked_v2.png> <./Studies/Figures/dEdX_stacked_v3.png>]
-<Studies/Figures/DepEnergy_Stacked_v1.png, id=146, 700.6175pt x 475.7775pt>
+ [4 <./Studies/Figures/dEdX_stacked_v1.png> <./Studies/Figures/dEdX_stacked_v4.
+png> <./Studies/Figures/dEdX_Fit_v2.png> <./Studies/Figures/dEdX_Fit_v3.png> <.
+/Studies/Figures/dEdX_stacked_v2.png> <./Studies/Figures/dEdX_stacked_v3.png>]
+<Studies/Figures/DepEnergy_Stacked_v1.png, id=145, 700.6175pt x 475.7775pt>
 File: Studies/Figures/DepEnergy_Stacked_v1.png Graphic file (type png)
 
 <use Studies/Figures/DepEnergy_Stacked_v1.png>
@@ -1200,7 +1201,7 @@ Package pdftex.def Info: Studies/Figures/DepEnergy_Stacked_v1.png used on input
  line 149.
 (pdftex.def)             Requested size: 225.34383pt x 153.02144pt.
 
-<Studies/Figures/DepEnergy_Stacked_v3.png, id=147, 700.6175pt x 475.7775pt>
+<Studies/Figures/DepEnergy_Stacked_v3.png, id=146, 700.6175pt x 475.7775pt>
 File: Studies/Figures/DepEnergy_Stacked_v3.png Graphic file (type png)
 
 <use Studies/Figures/DepEnergy_Stacked_v3.png>
@@ -1252,11 +1253,11 @@ E[]\OT1/cmr/m/n/10 )$ is the con-tent of the $\OML/cmm/m/it/10 i$\OT1/cmr/m/n/1
 OT1/cmr/m/n/10 (\OML/cmm/m/it/10 E[]\OT1/cmr/m/n/10 )$
  []
 
-<Studies/Figures/cAngleTrue.png, id=214, 600.2425pt x 577.15625pt>
+<Studies/Figures/cAngleTrue.png, id=215, 600.2425pt x 577.15625pt>
 File: Studies/Figures/cAngleTrue.png Graphic file (type png)
 
 <use Studies/Figures/cAngleTrue.png>
-Package pdftex.def Info: Studies/Figures/cAngleTrue.png used on input line 367.
+Package pdftex.def Info: Studies/Figures/cAngleTrue.png used on input line 370.
 
 (pdftex.def)             Requested size: 225.34383pt x 216.67084pt.
  Excluding 'comment' comment.) [11
@@ -1286,7 +1287,7 @@ Here is how much of TeX's memory you used:
  21977 multiletter control sequences out of 15000+600000
  9605 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,9n,92p,976b,434s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,9n,92p,976b,459s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
@@ -1304,10 +1305,10 @@ ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2017/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on pionXS_main.pdf (12 pages, 598096 bytes).
+Output written on pionXS_main.pdf (12 pages, 599452 bytes).
 PDF statistics:
- 298 PDF objects out of 1000 (max. 8388607)
- 243 compressed objects within 3 object streams
+ 299 PDF objects out of 1000 (max. 8388607)
+ 244 compressed objects within 3 object streams
  62 named destinations out of 1000 (max. 500000)
  220 words of extra memory for PDF output out of 10000 (max. 10000000)
 

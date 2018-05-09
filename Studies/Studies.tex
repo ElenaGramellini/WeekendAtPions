@@ -25,8 +25,8 @@ For each track, we order the space points according to their Z position (along t
 \bar\alpha_{MC} = (4.5 \pm 3.9) \text{ deg}. 
 \end{equation}
 
-A small $0.5 \text{ deg}$ systematic shift between the mean of the data and MC angular resolution is present, which we account for in the context of the MC efficiency correction to the cross section, as presented in \ref{sec:angSys}.
-
+Interaction angles smaller than the angle resolution are indistinguishable for the reconstruction. Therefore, our ability to measure the cross section is limited to interaction angles greater than 5.0 deg. A small $0.5 \text{ deg}$ systematic shift between the mean of the data and MC angular resolution is present, which we account for in the context of the MC efficiency correction to the cross section, as presented in \ref{sec:angSys}.
+More accurate studies of the angular resolution as a function of the kinetic energy and track lenght, albeit interesting, are left for an improvement of the analysis.
 
 
 \begin{figure}[ht]
@@ -298,8 +298,7 @@ In order to evaluate the pion content of each bin in data, we scale the measured
 N^{\pi Reco Data}_{Interacting} = N^{TOT Data}_{Interacting} (E_{i}) - B^{Data}_{Interacting} (E_i)  =  C^{\pi MC}_{Interacting} (E_{i}) N^{TOT Data}_{Interacting} (E_{i}).
 \end{equation}
 
-Figures \ref{fig:CorrectionsBeam} show $C^{\pi MC}_{Interacting} (E_{i})$ and $C^{\pi MC}_{Incident} (E_{i})$ as a function of momentum for the 60A runs and their systematic uncertainty. 
-We take a 100\% systematic uncertainty on the muon and electron content: we calculate the extreme values of  $C^{\pi MC}_{Interacting} (E_{i})$ and $C^{\pi MC}_{Incident} (E_{i})$ in each bin changing the beam composition for the configurations listed in Table \ref{tab:beamlineSys}.
+Figures \ref{fig:CorrectionsBeam} show $C^{\pi MC}_{Interacting} (E_{i})$ and $C^{\pi MC}_{Incident} (E_{i})$ as a function of the kinetic energy for the 60A runs and their systematic uncertainty.  We take a 100\% systematic uncertainty on the muon and electron content: we calculate the extreme values of  $C^{\pi MC}_{Interacting} (E_{i})$ and $C^{\pi MC}_{Incident} (E_{i})$ in each bin changing the beam composition for the configurations listed in Table \ref{tab:beamlineSys}.
 
 
 
@@ -353,14 +352,19 @@ N^{\text{ $\pi$ True Data}}_{\text{Interacting}} (E_{i})  =  \frac{N^{\text{$\pi
 
 where $N^{\text{$\pi$ Reco Data}}_{\text{Interacting}} (E_{i})$ is the background subtracted bin content of the $i$-th bin in for the reconstructed interacting histogram for data, i.e. 
 \begin{equation}
-N^{\text{$\pi$ Reco Data}}_{\text{Interacting}} (E_{i}) =  N^{TOT Data}_{Interacting} (E_{i}) - B^{Data}_{Interacting} (E_i)  =  C^{\pi MC}_{Interacting} (E_{i}) N^{TOT Data}_{Interacting} (E_{i}).
+N^{\text{$\pi$ Reco Data}}_{\text{Interacting}} (E_{i}) =  N^{\text{TOT Data}}_{\text{Interacting}} (E_{i}) - B^{\text{Data}}_{\text{Interacting}} (E_i)  =  C^{\text{$\pi$ MC}}_{\text{Interacting}} (E_{i}) N^{\text{TOT Data}}_{\text{Interacting}} (E_{i}).
 \end{equation}
 
+Figures \ref{fig:EffCorr} show $\epsilon^{\text{int}}_i(E_{i})$ and $\epsilon^{\text{int}}_i (E_{i})$ as a function of the kinetic energy for the 60A runs and their systematic uncertainty. 
 
+%############################# Systematics 
 
+In section \ref{sec:angleRes}, we estimated the angular resolution for data and MC to be $\bar\alpha_{Data} = (5.0 \pm 4.5) \text{ deg}$  and 
+$\bar\alpha_{MC} = (4.5 \pm 3.9) \text{ deg}$, respectively. Interaction angles smaller than the angular resolution are indistinguishable for the reconstruction. Thus, we claim we are able to  measure the cross section for interaction angles greater than 5.0 deg.
 
-%Figure \ref{fig:trueScatteringAngle} shows the distribution of the simulated scattering angles for elastic scattering as predicted by Geant4. 
-%In  \ref{sec:angleRes}) Since the angle resolution in data is estimated to be $\bar\alpha_{Data} = (5.0 \pm 4.5) \text{ deg}$  
+Therefore, we select events which have an interaction angle greater than a given $\alpha_res$ in order to construct the true interacting and incident histograms and calculate the efficiency correction. 
+
+The systematics on the efficiency correction is estimated by varying the value of $\alpha_res$ to be 
 
 \begin{figure}[p]
 \centering
@@ -369,9 +373,6 @@ N^{\text{$\pi$ Reco Data}}_{\text{Interacting}} (E_{i}) =  N^{TOT Data}_{Interac
 \label{fig:trueScatteringAngle}
 \end{figure}
 
-
-
-\subsection{Systematics on Efficiency Correction}\label{sec:angSys}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
