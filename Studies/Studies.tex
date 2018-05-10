@@ -3,7 +3,7 @@
 \section{Tracking Studies}
 \subsection{Angular Resolution}\label{sec:angleRes}
 Scope of this study is to understand and compare the tracking performances and angular resolution of the TPC tracking on data and MC. 
-We use the angular resolution of the tracking to determine  the value of smallest angle that we can reconstruct with a non-zero efficiency, effectively determining a selection on the angular distribution of the cross section measurement due to the tracking performances.
+We use the angular resolution of the tracking to determine  the value of smallest angle that we can reconstruct with a non-zero efficiency, effectively determining a selection on the angular distribution of the cross section measurement due to the tracking performance.
 
 
 We use the same procedure to evaluate the tracking performance in data and MC  outlined in this section. 
@@ -15,7 +15,7 @@ For each track we calculate the average distance between each 3D point in space 
 where $N$ is the number of point of the track and $d_i$ is the distance of the $i$-th space point to the line fit. Several tests to compare the goodness of fit between data and MC have been considered. We decided to use $\bar d$ for its straightforward interpretation. The $\bar d$ distribution for data and MC is shown in Figure \ref{fig:Chi2AllPts}.
 
 A visual representation of the procedure used to evaluate the angular resolution is shown in Figure \ref{fig:AngResProcedure}. 
-For each track, we order the space points according to their Z position (along the positive beam direction) and we split them in two sets: the first set contains all the points belonging to the first half of the track and the second set counts all the points contains to the second half of the track. We remove the last four points in the first set and the first four points in the second set, so to have a gap in the middle of the original track. We fit the first and the second set of points with a line separately. We then calculate the angle between the fit of the first and second half $\alpha$. The angle $\alpha$ determines the spatial resolution of the tracking. The distributions for data and MC for $\alpha$ are given in \ref{fig:trackingResolution}. The mean of the data and MC angular resolution are respectively 
+For each track, we order the space points according to their Z position along the positive beam direction (panel a) and we split them in two sets: the first set contains all the points belonging to the first half of the track and the second set counts all the points contains to the second half of the track. We remove the last four points in the first set and the first four points in the second set, so to have a gap in the middle of the original track (panel b). We fit the first and the second set of points with a line separately (panel c). We then calculate the angle between the fit of the first and second half $\alpha$ (panel d). The angle $\alpha$ determines the spatial resolution of the tracking. The distributions for data and MC for $\alpha$ are given in Figure \ref{fig:trackingResolution}. The mean of the data and MC angular resolution are respectively 
 
 \begin{equation}
 \bar\alpha_{Data} = (5.0 \pm 4.5) \text{ deg} 
@@ -27,6 +27,15 @@ For each track, we order the space points according to their Z position (along t
 
 Interaction angles smaller than the angle resolution are indistinguishable for the reconstruction. Therefore, our ability to measure the cross section is limited to interaction angles greater than 5.0 deg. A small $0.5 \text{ deg}$ systematic shift between the mean of the data and MC angular resolution is present, which we account for in the context of the MC efficiency correction to the cross section, as presented in \ref{sec:angSys}.
 More accurate studies of the angular resolution as a function of the kinetic energy and track lenght, albeit interesting, are left for an improvement of the analysis.
+
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=\textwidth]{Studies/Figures/TrackingProcedure.png}
+\caption{A visual representation of the procedure used to evaluate the angular resolution.}
+\label{fig:AngResProcedure}
+\end{figure}
+
 
 
 \begin{figure}[ht]
@@ -360,9 +369,7 @@ Figures \ref{fig:EffCorr} show $\epsilon^{\text{int}}_i(E_{i})$ and $\epsilon^{\
 %############################# Systematics 
 
 In section \ref{sec:angleRes}, we estimated the angular resolution for data and MC to be $\bar\alpha_{Data} = (5.0 \pm 4.5) \text{ deg}$  and 
-$\bar\alpha_{MC} = (4.5 \pm 3.9) \text{ deg}$, respectively. Interaction angles smaller than the angular resolution are indistinguishable for the reconstruction. Thus, we claim we are able to  measure the cross section for interaction angles greater than 5.0 deg.
-
-Therefore, we select events which have an interaction angle greater than a given $\alpha_res$ in order to construct the true interacting and incident histograms and calculate the efficiency correction. 
+$\bar\alpha_{MC} = (4.5 \pm 3.9) \text{ deg}$, respectively. Interaction angles smaller than the angular resolution are indistinguishable for the reconstruction. Thus, we claim we are able to  measure the cross section for interaction angles greater than 5.0 deg. Geant4 simulates interactions at all angles, as shown in figure \ref{trueScatteringAngle}. In order to calculate the efficiency correction,  we select events which have an interaction angle greater than a given $\alpha_res$ to construct the true interacting and incident histograms (the denominator of the efficiency correction). 
 
 The systematics on the efficiency correction is estimated by varying the value of $\alpha_res$ to be 
 

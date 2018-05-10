@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.11.15)  9 MAY 2018 14:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.11.15)  10 MAY 2018 14:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1092,185 +1092,200 @@ LaTeX Info: Redefining \nameref on input line 46.
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./Stud
 ies/Studies.tex
 
-LaTeX Warning: Reference `fig:AngResProcedure' on page 2 undefined on input lin
-e 17.
+LaTeX Warning: Reference `sec:angSys' on page 2 undefined on input line 28.
 
-<Studies/Figures/cDAvg.png, id=94, 600.2425pt x 577.15625pt>
+<Studies/Figures/TrackingProcedure.png, id=89, 449.0376pt x 471.2004pt>
+File: Studies/Figures/TrackingProcedure.png Graphic file (type png)
+
+<use Studies/Figures/TrackingProcedure.png>
+Package pdftex.def Info: Studies/Figures/TrackingProcedure.png used on input li
+ne 34.
+(pdftex.def)             Requested size: 469.47049pt x 492.64679pt.
+
+<Studies/Figures/cDAvg.png, id=90, 600.2425pt x 577.15625pt>
 File: Studies/Figures/cDAvg.png Graphic file (type png)
 
 <use Studies/Figures/cDAvg.png>
-Package pdftex.def Info: Studies/Figures/cDAvg.png used on input line 35.
+Package pdftex.def Info: Studies/Figures/cDAvg.png used on input line 44.
 (pdftex.def)             Requested size: 211.26028pt x 203.13496pt.
 
-<Studies/Figures/cTrackingDeg.png, id=95, 573.14125pt x 562.1pt>
+<Studies/Figures/cTrackingDeg.png, id=91, 573.14125pt x 562.1pt>
 File: Studies/Figures/cTrackingDeg.png Graphic file (type png)
 
 <use Studies/Figures/cTrackingDeg.png>
-Package pdftex.def Info: Studies/Figures/cTrackingDeg.png used on input line 41
+Package pdftex.def Info: Studies/Figures/cTrackingDeg.png used on input line 50
 .
 (pdftex.def)             Requested size: 211.26028pt x 207.19324pt.
 
-<Studies/Figures/dEdX_Fit_v1.png, id=99, 700.6175pt x 475.7775pt>
+<Studies/Figures/dEdX_Fit_v1.png, id=95, 700.6175pt x 475.7775pt>
 File: Studies/Figures/dEdX_Fit_v1.png Graphic file (type png)
 
 <use Studies/Figures/dEdX_Fit_v1.png>
-Package pdftex.def Info: Studies/Figures/dEdX_Fit_v1.png used on input line 58.
+Package pdftex.def Info: Studies/Figures/dEdX_Fit_v1.png used on input line 67.
 
 (pdftex.def)             Requested size: 225.34383pt x 153.02144pt.
 
-<Studies/Figures/dEdX_Fit_v4.png, id=100, 700.6175pt x 475.7775pt>
+<Studies/Figures/dEdX_Fit_v4.png, id=96, 700.6175pt x 475.7775pt>
 File: Studies/Figures/dEdX_Fit_v4.png Graphic file (type png)
 
 <use Studies/Figures/dEdX_Fit_v4.png>
-Package pdftex.def Info: Studies/Figures/dEdX_Fit_v4.png used on input line 59.
+Package pdftex.def Info: Studies/Figures/dEdX_Fit_v4.png used on input line 68.
 
 (pdftex.def)             Requested size: 225.34383pt x 153.02144pt.
 
-<Studies/Figures/dEdX_stacked_v1.png, id=102, 700.6175pt x 475.7775pt>
+<Studies/Figures/dEdX_stacked_v1.png, id=98, 700.6175pt x 475.7775pt>
 File: Studies/Figures/dEdX_stacked_v1.png Graphic file (type png)
 
 <use Studies/Figures/dEdX_stacked_v1.png>
 Package pdftex.def Info: Studies/Figures/dEdX_stacked_v1.png used on input line
- 69.
+ 78.
 (pdftex.def)             Requested size: 225.34383pt x 153.02144pt.
 
-<Studies/Figures/dEdX_stacked_v4.png, id=103, 700.6175pt x 475.7775pt>
+<Studies/Figures/dEdX_stacked_v4.png, id=99, 700.6175pt x 475.7775pt>
 File: Studies/Figures/dEdX_stacked_v4.png Graphic file (type png)
 
 <use Studies/Figures/dEdX_stacked_v4.png>
 Package pdftex.def Info: Studies/Figures/dEdX_stacked_v4.png used on input line
- 70.
+ 79.
 (pdftex.def)             Requested size: 225.34383pt x 153.02144pt.
 
-<Studies/Figures/dEdX_Fit_v2.png, id=105, 700.6175pt x 475.7775pt>
+<Studies/Figures/dEdX_Fit_v2.png, id=101, 700.6175pt x 475.7775pt>
 File: Studies/Figures/dEdX_Fit_v2.png Graphic file (type png)
 
 <use Studies/Figures/dEdX_Fit_v2.png>
-Package pdftex.def Info: Studies/Figures/dEdX_Fit_v2.png used on input line 78.
+Package pdftex.def Info: Studies/Figures/dEdX_Fit_v2.png used on input line 87.
 
 (pdftex.def)             Requested size: 225.34383pt x 153.02144pt.
 
-<Studies/Figures/dEdX_Fit_v3.png, id=106, 700.6175pt x 475.7775pt>
+<Studies/Figures/dEdX_Fit_v3.png, id=102, 700.6175pt x 475.7775pt>
 File: Studies/Figures/dEdX_Fit_v3.png Graphic file (type png)
 
 <use Studies/Figures/dEdX_Fit_v3.png>
-Package pdftex.def Info: Studies/Figures/dEdX_Fit_v3.png used on input line 79.
+Package pdftex.def Info: Studies/Figures/dEdX_Fit_v3.png used on input line 88.
 
 (pdftex.def)             Requested size: 225.34383pt x 153.02144pt.
 
-<Studies/Figures/dEdX_stacked_v2.png, id=107, 700.6175pt x 475.7775pt>
+<Studies/Figures/dEdX_stacked_v2.png, id=103, 700.6175pt x 475.7775pt>
 File: Studies/Figures/dEdX_stacked_v2.png Graphic file (type png)
 
 <use Studies/Figures/dEdX_stacked_v2.png>
 Package pdftex.def Info: Studies/Figures/dEdX_stacked_v2.png used on input line
- 80.
+ 89.
 (pdftex.def)             Requested size: 225.34383pt x 153.02144pt.
 
-<Studies/Figures/dEdX_stacked_v3.png, id=108, 700.6175pt x 475.7775pt>
+<Studies/Figures/dEdX_stacked_v3.png, id=104, 700.6175pt x 475.7775pt>
 File: Studies/Figures/dEdX_stacked_v3.png Graphic file (type png)
 
 <use Studies/Figures/dEdX_stacked_v3.png>
 Package pdftex.def Info: Studies/Figures/dEdX_stacked_v3.png used on input line
- 81.
+ 90.
 (pdftex.def)             Requested size: 225.34383pt x 153.02144pt.
- [2] [3 <./Studies/Figures/cDAvg.png> <./Studies/Figures/cTrackingDeg.png> <./S
-tudies/Figures/dEdX_Fit_v1.png> <./Studies/Figures/dEdX_Fit_v4.png>]
-<Studies/Figures/DepEnergy_Fit_v1.png, id=135, 700.6175pt x 475.7775pt>
+ [2] [3 <./Studies/Figures/TrackingProcedure.png>] [4 <./Studies/Figures/cDAvg.
+png> <./Studies/Figures/cTrackingDeg.png> <./Studies/Figures/dEdX_Fit_v1.png> <
+./Studies/Figures/dEdX_Fit_v4.png>]
+<Studies/Figures/DepEnergy_Fit_v1.png, id=136, 700.6175pt x 475.7775pt>
 File: Studies/Figures/DepEnergy_Fit_v1.png Graphic file (type png)
 
 <use Studies/Figures/DepEnergy_Fit_v1.png>
 Package pdftex.def Info: Studies/Figures/DepEnergy_Fit_v1.png used on input lin
-e 128.
+e 137.
 (pdftex.def)             Requested size: 225.34383pt x 153.02144pt.
 
-<Studies/Figures/DepEnergy_Fit_v4.png, id=136, 700.6175pt x 475.7775pt>
+<Studies/Figures/DepEnergy_Fit_v4.png, id=137, 700.6175pt x 475.7775pt>
 File: Studies/Figures/DepEnergy_Fit_v4.png Graphic file (type png)
 
 <use Studies/Figures/DepEnergy_Fit_v4.png>
 Package pdftex.def Info: Studies/Figures/DepEnergy_Fit_v4.png used on input lin
-e 129.
+e 138.
 (pdftex.def)             Requested size: 225.34383pt x 153.02144pt.
- [4 <./Studies/Figures/dEdX_stacked_v1.png> <./Studies/Figures/dEdX_stacked_v4.
+ [5 <./Studies/Figures/dEdX_stacked_v1.png> <./Studies/Figures/dEdX_stacked_v4.
 png> <./Studies/Figures/dEdX_Fit_v2.png> <./Studies/Figures/dEdX_Fit_v3.png> <.
 /Studies/Figures/dEdX_stacked_v2.png> <./Studies/Figures/dEdX_stacked_v3.png>]
-<Studies/Figures/DepEnergy_Stacked_v1.png, id=145, 700.6175pt x 475.7775pt>
+<Studies/Figures/DepEnergy_Stacked_v1.png, id=146, 700.6175pt x 475.7775pt>
 File: Studies/Figures/DepEnergy_Stacked_v1.png Graphic file (type png)
 
 <use Studies/Figures/DepEnergy_Stacked_v1.png>
 Package pdftex.def Info: Studies/Figures/DepEnergy_Stacked_v1.png used on input
- line 149.
+ line 158.
 (pdftex.def)             Requested size: 225.34383pt x 153.02144pt.
 
-<Studies/Figures/DepEnergy_Stacked_v3.png, id=146, 700.6175pt x 475.7775pt>
+<Studies/Figures/DepEnergy_Stacked_v3.png, id=147, 700.6175pt x 475.7775pt>
 File: Studies/Figures/DepEnergy_Stacked_v3.png Graphic file (type png)
 
 <use Studies/Figures/DepEnergy_Stacked_v3.png>
 Package pdftex.def Info: Studies/Figures/DepEnergy_Stacked_v3.png used on input
- line 150.
+ line 159.
 (pdftex.def)             Requested size: 225.34383pt x 153.02144pt.
- [5 <./Studies/Figures/DepEnergy_Fit_v1.png> <./Studies/Figures/DepEnergy_Fit_v
+ [6 <./Studies/Figures/DepEnergy_Fit_v1.png> <./Studies/Figures/DepEnergy_Fit_v
 4.png> <./Studies/Figures/DepEnergy_Stacked_v1.png> <./Studies/Figures/DepEnerg
 y_Stacked_v3.png>]
-<Studies/Figures//Beam60A.png, id=161, 600.2425pt x 577.15625pt>
+<Studies/Figures//Beam60A.png, id=162, 600.2425pt x 577.15625pt>
 File: Studies/Figures//Beam60A.png Graphic file (type png)
 
 <use Studies/Figures//Beam60A.png>
-Package pdftex.def Info: Studies/Figures//Beam60A.png used on input line 216.
+Package pdftex.def Info: Studies/Figures//Beam60A.png used on input line 225.
 (pdftex.def)             Requested size: 234.73476pt x 225.7065pt.
 
-<Studies/Figures//Beam100A.png, id=162, 600.2425pt x 577.15625pt>
+<Studies/Figures//Beam100A.png, id=163, 600.2425pt x 577.15625pt>
 File: Studies/Figures//Beam100A.png Graphic file (type png)
 
 <use Studies/Figures//Beam100A.png>
-Package pdftex.def Info: Studies/Figures//Beam100A.png used on input line 217.
+Package pdftex.def Info: Studies/Figures//Beam100A.png used on input line 226.
 (pdftex.def)             Requested size: 234.73476pt x 225.7065pt.
 
-Overfull \hbox (2.22124pt too wide) in paragraph at lines 216--218
+Overfull \hbox (2.22124pt too wide) in paragraph at lines 225--227
 [][] [] 
  []
 
-[6] <Studies/Figures/Staggered60A.png, id=177, 1191.45125pt x 565.11125pt>
+[7] <Studies/Figures/Staggered60A.png, id=179, 1191.45125pt x 565.11125pt>
 File: Studies/Figures/Staggered60A.png Graphic file (type png)
 
 <use Studies/Figures/Staggered60A.png>
-Package pdftex.def Info: Studies/Figures/Staggered60A.png used on input line 27
-9.
+Package pdftex.def Info: Studies/Figures/Staggered60A.png used on input line 28
+8.
 (pdftex.def)             Requested size: 469.47049pt x 222.66893pt.
- [7 <./Studies/Figures//Beam60A.png> <./Studies/Figures//Beam100A.png>] [8 <./S
+ [8 <./Studies/Figures//Beam60A.png> <./Studies/Figures//Beam100A.png>] [9 <./S
 tudies/Figures/Staggered60A.png>]
-<Studies/Figures/c60A_Multiple.png, id=197, 1202.4925pt x 577.15625pt>
+<Studies/Figures/c60A_Multiple.png, id=198, 1202.4925pt x 577.15625pt>
 File: Studies/Figures/c60A_Multiple.png Graphic file (type png)
 
 <use Studies/Figures/c60A_Multiple.png>
 Package pdftex.def Info: Studies/Figures/c60A_Multiple.png used on input line 3
-26.
+34.
 (pdftex.def)             Requested size: 469.47049pt x 225.3278pt.
- [9] [10 <./Studies/Figures/c60A_Multiple.png>]
-Overfull \hbox (14.1765pt too wide) in paragraph at lines 348--349
+ [10] [11 <./Studies/Figures/c60A_Multiple.png>]
+Overfull \hbox (14.1765pt too wide) in paragraph at lines 356--357
 []\OT1/cmr/m/n/10 where $\OML/cmm/m/it/10 N[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 
 E[]\OT1/cmr/m/n/10 )$ is the con-tent of the $\OML/cmm/m/it/10 i$\OT1/cmr/m/n/1
 0 -th bin in for the true in-ter-act-ing his-togram, and $\OML/cmm/m/it/10 N[]\
 OT1/cmr/m/n/10 (\OML/cmm/m/it/10 E[]\OT1/cmr/m/n/10 )$
  []
 
-<Studies/Figures/cAngleTrue.png, id=215, 600.2425pt x 577.15625pt>
+
+LaTeX Warning: Reference `fig:EffCorr' on page 12 undefined on input line 367.
+
+
+LaTeX Warning: Reference `trueScatteringAngle' on page 12 undefined on input li
+ne 372.
+
+<Studies/Figures/cAngleTrue.png, id=216, 600.2425pt x 577.15625pt>
 File: Studies/Figures/cAngleTrue.png Graphic file (type png)
 
 <use Studies/Figures/cAngleTrue.png>
-Package pdftex.def Info: Studies/Figures/cAngleTrue.png used on input line 370.
+Package pdftex.def Info: Studies/Figures/cAngleTrue.png used on input line 378.
 
 (pdftex.def)             Requested size: 225.34383pt x 216.67084pt.
- Excluding 'comment' comment.) [11
+ Excluding 'comment' comment.) [12
 
 ]
-[12 <./Studies/Figures/cAngleTrue.png>]
+[13 <./Studies/Figures/cAngleTrue.png>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 130.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 130.
  (./pionXS_main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 130.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 130.
 Package rerunfilecheck Info: File `pionXS_main.out' has not changed.
-(rerunfilecheck)             Checksum: 5A8470610C940F265F2680939E6A16BD;997.
+(rerunfilecheck)             Checksum: FD5C8B6C4CE00352EFD77D95EFE84F2A;911.
 
 
 LaTeX Warning: There were undefined references.
@@ -1281,13 +1296,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 130.
  ) 
 Here is how much of TeX's memory you used:
- 18846 strings out of 492995
- 348063 string characters out of 6132703
- 432068 words of memory out of 5000000
- 21977 multiletter control sequences out of 15000+600000
+ 18853 strings out of 492995
+ 348279 string characters out of 6132703
+ 432115 words of memory out of 5000000
+ 21982 multiletter control sequences out of 15000+600000
  9605 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,9n,92p,976b,459s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,9n,92p,976b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
@@ -1305,10 +1320,10 @@ ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2017/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on pionXS_main.pdf (12 pages, 599452 bytes).
+Output written on pionXS_main.pdf (13 pages, 640183 bytes).
 PDF statistics:
- 299 PDF objects out of 1000 (max. 8388607)
+ 301 PDF objects out of 1000 (max. 8388607)
  244 compressed objects within 3 object streams
- 62 named destinations out of 1000 (max. 500000)
- 220 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 63 named destinations out of 1000 (max. 500000)
+ 217 words of extra memory for PDF output out of 10000 (max. 10000000)
 
