@@ -2,20 +2,19 @@
 
 \section{Tracking Studies}
 \subsection{Angular Resolution}\label{sec:angleRes}
+In this section, we outline the procedure used to evaluate the performance of the tracking algorithm in data and MC and the relative results.
 Scope of this study is to understand and compare the tracking performances and angular resolution of the TPC tracking on data and MC. 
 We use the angular resolution of the tracking to determine  the value of smallest angle that we can reconstruct with a non-zero efficiency, effectively determining a selection on the angular distribution of the cross section measurement due to the tracking performance.
 
-
-We use the same procedure to evaluate the tracking performance in data and MC  outlined in this section. 
-We start by selecting all the WC2TPC matched tracks, that are the tracks used for the cross section analysis.  These tracks can contain from a minimum of 3 3D-space points to a maximum of 240  3D-space points.  We fit a line to all the 3D space points associated with the track. 
+We start by selecting all the WC2TPC matched tracks used for the cross section analysis.  These tracks can contain from a minimum of 3 3D-space points to a maximum of 240  3D-space points.  We fit a line to all the 3D space points associated with the track. 
 For each track we calculate the average distance between each 3D point in space and the fit line as follows 
 \begin{equation} 
 \bar d = \frac{\sum^N_i d_i}{N},
 \end{equation} 
-where $N$ is the number of point of the track and $d_i$ is the distance of the $i$-th space point to the line fit. Several tests to compare the goodness of fit between data and MC have been considered. We decided to use $\bar d$ for its straightforward interpretation. The $\bar d$ distribution for data and MC is shown in Figure \ref{fig:Chi2AllPts}.
+where $N$ is the number of point of the track and $d_i$ is the distance of the $i$-th space point to the line fit. Several tests to compare the goodness of fit between data and MC have been considered. We decided to use $\bar d$ for its straightforward interpretation. The $\bar d$ distribution for data and MC is shown in Figure \ref{fig:Chi2AllPts} and shows a relatively good agreement between data and MC.
 
 A visual representation of the procedure used to evaluate the angular resolution is shown in Figure \ref{fig:AngResProcedure}. 
-For each track, we order the space points according to their Z position along the positive beam direction (panel a) and we split them in two sets: the first set contains all the points belonging to the first half of the track and the second set counts all the points contains to the second half of the track. We remove the last four points in the first set and the first four points in the second set, so to have a gap in the middle of the original track (panel b). We fit the first and the second set of points with a line separately (panel c). We then calculate the angle between the fit of the first and second half $\alpha$ (panel d). The angle $\alpha$ determines the spatial resolution of the tracking. The distributions for data and MC for $\alpha$ are given in Figure \ref{fig:trackingResolution}. The mean of the data and MC angular resolution are respectively 
+For each track, we order the space points according to their Z position along the positive beam direction (panel a) and we split them in two sets: the first set contains all the points belonging to the first half of the track and the second set contains all the points belonging the second half of the track. We remove the last four points in the first set and the first four points in the second set, so to have a gap in the middle of the original track (panel b). We fit the first and the second set of points with two lines  (panel c). We then calculate the angle between the fit of the first and second half $\alpha$ (panel d). The angle $\alpha$ determines the spatial resolution of the tracking. The distributions for data and MC for $\alpha$ are given in Figure \ref{fig:trackingResolution}. The mean of the data and MC angular resolution are respectively 
 
 \begin{equation}
 \bar\alpha_{Data} = (5.0 \pm 4.5) \text{ deg} 
@@ -25,18 +24,17 @@ For each track, we order the space points according to their Z position along th
 \bar\alpha_{MC} = (4.5 \pm 3.9) \text{ deg}. 
 \end{equation}
 
-Interaction angles smaller than the angle resolution are indistinguishable for the reconstruction. Therefore, our ability to measure the cross section is limited to interaction angles greater than 5.0 deg. A small $0.5 \text{ deg}$ systematic shift between the mean of the data and MC angular resolution is present, which we account for in the context of the MC efficiency correction to the cross section, as presented in \ref{sec:angSys}.
-More accurate studies of the angular resolution as a function of the kinetic energy and track lenght, albeit interesting, are left for an improvement of the analysis.
+Interaction angles smaller than the angle resolution are indistinguishable for the reconstruction. Therefore, we assess our ability to measure the cross section to be limited to interaction angles greater than 5.0 deg. More accurate studies of the angular resolution as a function of the kinetic energy and track length, albeit interesting, are left for an improvement of the analysis. A small $0.5 \text{ deg}$ systematic shift between the mean of the data and MC angular resolution is present.%, which we account for in the context of the MC efficiency correction to the cross section, as presented in \ref{sec:angSys}.
+
+It is beneficial to take a moment to describe the definition of interaction angle. In case of elastic scattering, the definition is straightforward: the interaction angle is the angle between the incoming and outgoing pion, i.e.
+
+\begin{equation}  
+\theta = \cos^{-1} \Big(\frac{\vec p _{\text{incoming}}  \cdot\vec p _{\text{outgoing}}}{|\vec p _{\text{incoming}}|  |\vec p _{\text{outgoing}}| }\Big).
+\end{equation}   
+In case of inelastic scattering,  the presence of several topologies requires a more complex definition, as shown in figure \ref{fig:scatterPic}.  We define the scattering angle as the biggest of the angles between the incoming pion and the visible daughters, where the visible daughters are charged particles that travel more than 0.47 cm in the detector (see panel a); in case all the daughters are invisible, the angle is assigned to be 90 deg (see panel b). We chose this working definition of scattering angle for inelastic scattering keeping in mind how our tracking reconstruction works: the tracking will stop correctly in case of all the daughters are not visible in the detector and it is likely to stop correctly if multiple daughters form an interaction vertex. The only ``dangerous" case is the production of one charged daughter plus neutrals, which we can study with this working definition of scattering angle (see panel c).
 
 
-\begin{figure}[p]
-\centering
-\includegraphics[width=\textwidth]{Studies/Figures/TrackingProcedure.png}
-\caption{A visual representation of the procedure used to evaluate the angular resolution.}
-\label{fig:AngResProcedure}
-\end{figure}
-
-
+We can see the effects of the angular resolution on the cross section by plotting the true Geant4 cross section for interaction angles greater than a minimum interaction angle. Figure \ref{fig:trueWithAngles} shows the  true Geant4 cross section  for interaction angles greater than 0 deg (green), 4.5 deg (red), 5.0 deg  (blue) and 9.0 deg (yellow).
 
 \begin{figure}[ht]
 \begin{minipage}[t]{0.45\linewidth}
@@ -53,6 +51,35 @@ More accurate studies of the angular resolution as a function of the kinetic ene
 \end{figure}
 
 
+
+
+\begin{figure}[ht]
+\begin{minipage}[t]{0.45\linewidth}
+\centering
+\includegraphics[width=\textwidth]{Studies/Figures/TrackingProcedure.png}
+\caption{A visual representation of the procedure used to evaluate the angular resolution.}
+\label{fig:AngResProcedure}
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}[t]{0.45\linewidth}
+\centering
+\includegraphics[width=\textwidth]{Studies/Figures/Daughters.png}
+\caption{A visual representation of the scattering angle definition in case of inelastic scattering.}
+\label{fig:scatterPic}
+\end{minipage}
+\end{figure}
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=0.48\textwidth]{Studies/Figures/cTrueXSAngle.png}
+\caption{ True ($\pi^-{-}, Ar$) cross section for interaction angles greater than 0 deg (green), 4.5 deg (red), 5.0 deg  (blue) and 9.0 deg (yellow). }
+\label{fig:trueWithAngles}
+\end{figure}
+
+
+
+
+\clearpage
 \section{Energy Studies}
 
 A study we did was to look at the difference between DATA/MC in the dE/dX and energy deposited. We basically found there is very little difference between the two and we try to quantify how much the difference is.
@@ -251,7 +278,7 @@ Once the beam composition at WC4 is know,  we simulate the electrons, muons and 
 
 \subsubsection{Background from secondaries at TPC Front Face}
 Pions can travel the length of the LArIAT beamline and interact hadronically in the steel or in the non-instrumented argon upstream to the TPC front face. Or, they could decay in flight between WC4 and the TPC. One of the interaction products can leak into the TPC and be matched with the WC track, contributing to the pool of events used for the cross section calculation. We call this type of particles ``secondaries" from pion events, with a terminology inspired by Geant4. 
-We estimate the number of secondaries using the DDMC pion sample.  The percentage of secondaries is given by the number of matched WC2TPC tracks whose corresponding particle is not flagged as primary by Geant4.  The secondary to pion ratio is $X$\% in the 60A sample and $Y$\% in the 100A sample.
+We estimate the number of secondaries using the DDMC pion sample.  The percentage of secondaries is given by the number of matched WC2TPC tracks whose corresponding particle is not flagged as primary by Geant4.  The secondary to pion ratio is 4.9\% in the 60A sample and $Y$\% in the 100A sample.
 
 \subsection{Background Contribution to the Cross Section}\label{sec:Correction}
 Once we have estimated the beam composition, the next step is propagating pions, muons and electrons to the TPC and evaluate their collective contribution to the cross section. To do so, we simulate the same number of electrons, muons and pions with the DDMC and we apply the same selection filters on the three samples. The number of events per particle species surviving this selection is shown on table \ref{tab:MCafterCutContaminants}.
