@@ -24,7 +24,7 @@ For each track, we order the space points according to their Z position along th
 \bar\alpha_{MC} = (4.5 \pm 3.9) \text{ deg}. 
 \end{equation}
 
-Interaction angles smaller than the angle resolution are indistinguishable for the reconstruction. Therefore, we assess our ability to measure the cross section to be limited to interaction angles greater than 5.0 deg. More accurate studies of the angular resolution as a function of the kinetic energy and track length, albeit interesting, are left for an improvement of the analysis. A small $0.5 \text{ deg}$ systematic shift between the mean of the data and MC angular resolution is present.%, which we account for in the context of the MC efficiency correction to the cross section, as presented in \ref{sec:angSys}.
+Interaction angles smaller than the angle resolution are indistinguishable for the reconstruction. Therefore, we assess our ability to measure the cross section to be limited to interaction angles greater than 5.0 deg. More accurate studies of the angular resolution as a function of the kinetic energy and track length, albeit interesting, are left for an improvement of the analysis. 
 
 It is beneficial to take a moment to describe the definition of interaction angle. In case of elastic scattering, the definition is straightforward: the interaction angle is the angle between the incoming and outgoing pion, i.e.
 
@@ -34,7 +34,8 @@ It is beneficial to take a moment to describe the definition of interaction angl
 In case of inelastic scattering,  the presence of several topologies requires a more complex definition, as shown in figure \ref{fig:scatterPic}.  We define the scattering angle as the biggest of the angles between the incoming pion and the visible daughters, where the visible daughters are charged particles that travel more than 0.47 cm in the detector (see panel a); in case all the daughters are invisible, the angle is assigned to be 90 deg (see panel b). We chose this working definition of scattering angle for inelastic scattering keeping in mind how our tracking reconstruction works: the tracking will stop correctly in case of all the daughters are not visible in the detector and it is likely to stop correctly if multiple daughters form an interaction vertex. The only ``dangerous" case is the production of one charged daughter plus neutrals, which we can study with this working definition of scattering angle (see panel c).
 
 
-We can see the effects of the angular resolution on the cross section by plotting the true Geant4 cross section for interaction angles greater than a minimum interaction angle. Figure \ref{fig:trueWithAngles} shows the  true Geant4 cross section  for interaction angles greater than 0 deg (green), 4.5 deg (red), 5.0 deg  (blue) and 9.0 deg (yellow).
+We can see the effects of the angular resolution on the cross section by plotting the true Geant4 cross section for interaction angles greater than a minimum interaction angle. Figure \ref{fig:trueWithAngles} shows the  true Geant4 cross section  for interaction angles greater than 0 deg (green), 4.5 deg (red), 5.0 deg  (blue) and 9.0 deg (yellow). 
+A small $0.5 \text{ deg}$ systematic shift between the mean of the data and MC angular resolution is present.%, which we account for in the context of the MC efficiency correction to the cross section, as presented in \ref{sec:angSys}.
 
 \begin{figure}[ht]
 \begin{minipage}[t]{0.45\linewidth}
@@ -200,26 +201,26 @@ and has the exact same uncertainty as the incident kinetic energy plot. Thus the
 If LArIAT had a beam of pure pions and were 100\% efficient in determining the interaction point within the TPC, the pion cross section in each energy bin would be given by
 
 \begin{equation}
- \sigma^{\pi^-}(E_{i})  = \frac{1}{n \delta X}\frac{N^{\pi^-}_{Interacting} (E_{i})}{N^{\pi^-}_{Incident}(E_{i})}.
+ \sigma^{\pi^-}(E_{i})  = \frac{1}{n \delta X}\frac{N^{\pi^-}_{ \text{Interacting}} (E_{i})}{N^{\pi^-}_{ \text{Incident}}(E_{i})}.
 \label{eq:thinTargetXSSolved}
 \end{equation}
 
 Unfortunately, this is not the case. The selection used to isolate pions in the LArIAT beam allows for the presence of some muons and electrons as background. Also, the LArIAT TPC is not 100\% efficient in determining the interaction point. Therefore we need to apply two corrections in order to extract the true pion cross section from LArIAT data: the background subtraction and the efficiency correction. 
 We estimate the true pion cross section in each energy bin changing  the equation \ref{eq:thinTargetXSSolved} into
 \begin{equation}
- \sigma^{\pi^-}(E_{i})  =\frac{1}{n \delta X}\frac{N^{\pi^-}_{Interacting} (E_{i})}{N^{\pi^-}_{Incident}(E_{i})} = \frac{1}{n \delta X}\frac{ \epsilon^{inc}_i [ N^{TOT}_{Interacting} (E_{i}) - B_{interacting} (E_i)] }{   \epsilon^{int}_i [N^{TOT}_{Incident}(E_{i}) - B_{incident} (E_i)]},
+ \sigma^{\pi^-}(E_{i})  =\frac{1}{n \delta X}\frac{N^{\pi^-}_{ \text{Interacting}} (E_{i})}{N^{\pi^-}_{ \text{Incident}}(E_{i})} = \frac{1}{n \delta X}\frac{ \epsilon^{inc}_i [ N^{ \text{TOT}}_{ \text{Interacting}} (E_{i}) - B_{ \text{Interacting}} (E_i)] }{   \epsilon^{int}_i [N^{ \text{TOT}}_{ \text{Incident}}(E_{i}) - B_{ \text{Incident}} (E_i)]},
 \label{eq:True}
 \end{equation}
 
 
 
  
-where  $N^{TOT}_{Interacting} (E_{i})$ and $N^{TOT}_{Incident}(E_{i})$ is the measured content of the data interacting and incident histograms respectively, $B_{interacting} (E_i)$ and $B_{incident} (E_i)$ represent the contributions from beamline background, and  $\epsilon^{int}_i$ and  $\epsilon^{inc}_i$ are the efficiency corrections for said histograms. 
+where  $N^{\text{TOT}}_{\text{Interacting}} (E_{i})$ and $N^{\text{TOT}}_{\text{Incident}} (E_{i})$ is the measured content of the data interacting and incident histograms respectively, $B_{interacting} (E_i)$ and $B_{\text{Incident}} (E_i)$ represent the contributions from beamline background, and  $\epsilon^{int}_i$ and  $\epsilon^{inc}_i$ are the efficiency corrections for said histograms. 
 
 As we will show in section \ref{sec:Correction}, the background subtraction for the interacting and incident histograms can be translated into a corresponding corrections $C^{\pi MC}_{Interacting} (E_{i})$ and $C^{\pi MC}_{Incident} (E_{i})$ and the cross section re-written as follows
 
 \begin{equation}
-   \sigma^{\pi^-}(E_{i})  = \frac{1}{n \delta X}\frac{ \epsilon^{inc}_i  \text{  } N^{TOT}_{Interacting} (E_{i}) \text{  } C^{\pi MC}_{Interacting} (E_{i}) }{   \epsilon^{int}_i \text{  }N^{TOT}_{Incident}(E_{i})\text{  } C^{\pi MC}_{Incident} (E_{i})}.
+   \sigma^{\pi^-}(E_{i})  = \frac{1}{n \delta X}\frac{ \epsilon^{inc}_i  \text{  } N^{\text{TOT}}_{\text{Interacting}} (E_{i}) \text{  } C^{\pi MC}_{Interacting} (E_{i}) }{   \epsilon^{int}_i \text{  }N^{\text{TOT}}_{\text{Incident}} (E_{i})\text{  } C^{\pi MC}_{Incident} (E_{i})}.
 \label{eq:C}
 \end{equation}
 
@@ -318,10 +319,10 @@ Beam Composition  @TPC FF &  88.5\%   & 8.2\%   & 3.3 \%   & & &\\
 \end{figure}
 
 In order to reproduce the closest make up of the beam to data, we weight each event of a given particle species according to the estimated beam composition. In case of 60A runs, for example, the weights are 0.688 for pions,  0.046 for muons  and 0.266 for electrons.
-We produce accordingly the interacting and incident histograms for the events surviving the selection, staggering the contributions for each particle species, as shown in Figure  \ref{fig:stag60A}. From those histograms, we are able to evaluate the relative contribution of  pions and  background to each bin of the interacting and incident histograms separately and obtain the respective corrections for data. We take here the interacting histogram as example, noting that the derivation of the correction for the incident histogram is identical. The number of entries in each bin of the interacting plot (Figure \ref{fig:stag60A} left) is  $N^{TOT}_{Interacting} (E_{i})$, equal to the sum of the pions and background in that bin, namely
+We produce accordingly the interacting and incident histograms for the events surviving the selection, staggering the contributions for each particle species, as shown in Figure  \ref{fig:stag60A}. From those histograms, we are able to evaluate the relative contribution of  pions and  background to each bin of the interacting and incident histograms separately and obtain the respective corrections for data. We take here the interacting histogram as example, noting that the derivation of the correction for the incident histogram is identical. The number of entries in each bin of the interacting plot (Figure \ref{fig:stag60A} left) is  $N^{\text{TOT}}_{\text{Interacting}} (E_{i})$, equal to the sum of the pions and background in that bin, namely
 
 \begin{equation}
-N^{TOT}_{Interacting} (E_{i}) =  N^\pi_{Interacting} (E_{i}) + \underbrace{ N^\mu_{Interacting} (E_{i}) + N^e_{Interacting} (E_{i}) + N^{Secondary}_{Interacting} (E_{i}) }_{B_{Interacting} (E_i)}.
+N^{\text{TOT}}_{\text{Interacting}} (E_{i}) =  N^\pi_{Interacting} (E_{i}) + \underbrace{ N^\mu_{Interacting} (E_{i}) + N^e_{Interacting} (E_{i}) + N^{Secondary}_{Interacting} (E_{i}) }_{B_{Interacting} (E_i)}.
 \end{equation}
 Thus, the relative contribution of pions to each bin in MC can be calculated as follows
 \begin{equation}
