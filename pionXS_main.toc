@@ -1,6 +1,7 @@
 \select@language {english}
 \contentsline {section}{\numberline {1}Tracking Studies}{2}{section.1}
-\contentsline {subsection}{\numberline {1.1}Angular Resolution}{2}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.1}Tracking Optimization}{2}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Angular Resolution}{2}{subsection.1.2}
 \contentsline {section}{\numberline {2}Energy Studies}{5}{section.2}
 \contentsline {subsection}{\numberline {2.1}dE/dX}{5}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Energy Deposited}{6}{subsection.2.2}

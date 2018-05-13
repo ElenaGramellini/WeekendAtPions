@@ -1,17 +1,19 @@
 
 
 \section{Tracking Studies}
+In this section, we outline the procedure used to evaluate and optimize the performance of the tracking algorithm in data and MC and the relative results.
+\subsection{Tracking Optimization}\label{sec:TrackingOpt}
+
 \subsection{Angular Resolution}\label{sec:angleRes}
-In this section, we outline the procedure used to evaluate the performance of the tracking algorithm in data and MC and the relative results.
 Scope of this study is to understand and compare the tracking performances and angular resolution of the TPC tracking on data and MC. 
 We use the angular resolution of the tracking to determine  the value of smallest angle that we can reconstruct with a non-zero efficiency, effectively determining a selection on the angular distribution of the cross section measurement due to the tracking performance.
 
-We start by selecting all the WC2TPC matched tracks used for the cross section analysis.  These tracks can contain from a minimum of 3 3D-space points to a maximum of 240  3D-space points.  We fit a line to all the 3D space points associated with the track. 
-For each track we calculate the average distance between each 3D point in space and the fit line as follows 
+We start by selecting all the WC2TPC matched tracks used for the cross section analysis.  These tracks can contain from a minimum of 3 3D-space points to a maximum of 240  3D-space points.  We fit a line to all the 3D-space points associated with the track. 
+For each track we calculate the average distance between each point in space and the fit line as follows 
 \begin{equation} 
 \bar d = \frac{\sum^N_i d_i}{N},
 \end{equation} 
-where $N$ is the number of point of the track and $d_i$ is the distance of the $i$-th space point to the line fit. Several tests to compare the goodness of fit between data and MC have been considered. We decided to use $\bar d$ for its straightforward interpretation. The $\bar d$ distribution for data and MC is shown in Figure \ref{fig:Chi2AllPts} and shows a relatively good agreement between data and MC.
+where $N$ is the number of 3D-space points of the track and $d_i$ is the distance of the $i$-th space point to the line fit. Several tests to compare the goodness of fit between data and MC have been considered. We decided to use $\bar d$ for its straightforward interpretation. The $\bar d$ distribution for data and MC is shown in Figure \ref{fig:Chi2AllPts} and shows a relatively good agreement between data and MC.
 
 A visual representation of the procedure used to evaluate the angular resolution is shown in Figure \ref{fig:AngResProcedure}. 
 For each track, we order the space points according to their Z position along the positive beam direction (panel a) and we split them in two sets: the first set contains all the points belonging to the first half of the track and the second set contains all the points belonging the second half of the track. We remove the last four points in the first set and the first four points in the second set, so to have a gap in the middle of the original track (panel b). We fit the first and the second set of points with two lines  (panel c). We then calculate the angle between the fit of the first and second half $\alpha$ (panel d). The angle $\alpha$ determines the spatial resolution of the tracking. The distributions for data and MC for $\alpha$ are given in Figure \ref{fig:trackingResolution}. The mean of the data and MC angular resolution are respectively 
